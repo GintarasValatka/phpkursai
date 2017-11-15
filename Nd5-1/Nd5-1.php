@@ -4,26 +4,20 @@
     <body>
         <p>
     <?php
-        $a = 5;
-        $b = 5;
-        $c = 5;
+        $a = 2;
+        $b = 10;
+        $c = 8;
             if($a+$b!=$c && $a+$c!=$b && $c+$b!=$a) {echo $a, $b, $c, " Tokiu krastiniu trikampis gali buti.";
                 if($a == $b && $c == $a) {echo " Trikampis yra lygiakrastis.";
                 }
-                    else {echo "Trikampis nera lygiakrastis.";
+                    if($a == $c && $a != $b) {echo " Trikampis yra lygiasonis.";
                     }
-            }  
+                        if($a!=$b && $a!=$c) {echo " Trikampis yra ivairiakrasti."; 
+                        }  
+                }
                 else {echo " Tokiu krastiniu trikampis negali buti.";
-                }  
+            }
     ?>
         </p>
     </body>
 </html>
-
-
-
-
-
-
-
-
