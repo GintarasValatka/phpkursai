@@ -4,38 +4,31 @@
     <body>
         <p>
     <?php
-        // $a=[[1, 3, 4], 
-        //     [2, 5], 
-        //     [       2=>3, 5=>8], 
-        //     [1, 1,        5=>1]];
-        //     $suma= 0;
-        // foreach($a as $eilute){
-        //     // print_r($eilute);
-        //     foreach ($eilute as $stulpelis) {
-        //         $suma += $stulpelis[0];
-        //         echo $stulpelis;
-        //     }
-        // }
+        $a=[[1, 3, 4], 
+            [2, 5], 
+            [       2=>3, 5=>8], 
+            [1, 1,        5=>1]];
 
-
-
-
-        $a = [
-            [2=>5, 6],
-            [2, 5, 7],
-            [3 =>6, 4=>12]
-        ];
-
-        $sum = [];
+            $suma=[];
 
         foreach($a as $eilute){
-            echo "<br>";
-            foreach($eilute as $stulpelis => $reiksme){
-                // echo $stulpelis, ":", $reiksme, ";";
-                $sum[$stulpelis] += $reiksme;
+            // print_r($eilute);
+            foreach ($eilute as $stulpelis => $reiksme) {
+                $suma[$stulpelis] += $reiksme;
             }
         }
-        print_r($sum);
+        print_r($suma);
+        echo "<br>";
+
+        // echo (max($suma));
+        $b=0;
+        foreach($suma as $max){
+            if($max>$b) {
+                $b=$max;
+            }
+        }
+        echo $max;
+
             
     ?>
         </p>
