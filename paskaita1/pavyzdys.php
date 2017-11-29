@@ -2,9 +2,8 @@
 <html>
     <head></head>
     <body>
-        <h1>Labas, <?php
-            $vardas = "Jonas Jonaitis";
-            echo $vardas; ?></h1>
-    <footer>&copy; <?php echo date("Y"); ?></footer>
+    <?php
+echo $_GET['skaicius1']*$_GET['skaicius2']
+?>
     </body>
 </html>
